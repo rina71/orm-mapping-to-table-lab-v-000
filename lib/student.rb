@@ -15,6 +15,7 @@ class Student
        album TEXT
        )
        SQL
+       binding.pry
    DB[:conn].execute(sql)
   end
 
