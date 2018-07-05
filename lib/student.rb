@@ -15,14 +15,14 @@ class Student
        album TEXT
        )
        SQL
-   DB[:conn].execute(sql) 
+   DB[:conn].execute(sql)
   end
 
   def self.drop_table
     sql =  <<-SQL
     DELETE * FROM table_name;
        SQL
-   DB[:conn].execute(sql) 
+   DB[:conn].execute(sql)
   end
   # Remember, you can access your database connection anywhere in this class
   #  with DB[:conn]
