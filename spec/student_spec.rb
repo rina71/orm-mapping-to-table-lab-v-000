@@ -32,7 +32,6 @@ describe "Student" do
       Student.create_table
       Student.drop_table
       table_check_sql = "SELECT tbl_name FROM sqlite_master WHERE type='table' AND tbl_name='students';"
-      binding.pry
       expect(DB[:conn].execute(table_check_sql)[0]).to eq(nil)
     end
   end
