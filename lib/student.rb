@@ -15,7 +15,6 @@ class Student
        album TEXT
        )
        SQL
-       binding.pry
    DB[:conn].execute(sql)
   end
 
@@ -23,7 +22,6 @@ class Student
     sql =  <<-SQL
     DELETE FROM students
        SQL
-       binding.pry
    DB[:conn].execute(sql)
   end
 
