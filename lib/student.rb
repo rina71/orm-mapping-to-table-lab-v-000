@@ -20,10 +20,13 @@ class Student
 
   def self.drop_table
     sql =  <<-SQL
-    DELETE * FROM students
+    DELETE FROM students
        SQL
+       binding.pry
    DB[:conn].execute(sql)
   end
+
+
   # Remember, you can access your database connection anywhere in this class
   #  with DB[:conn]
 
